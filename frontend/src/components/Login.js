@@ -4,8 +4,7 @@ function Login({ apiUrl }) {
   const handleLogin = () => {
     console.log('API URL:', apiUrl);
     console.log('Redirecting to:', `${apiUrl}/login`);
-    // Force using port 9000 for testing
-    window.location.href = 'http://localhost:9000/login';
+    window.location.href = `${apiUrl}/login`;
   };
 
   return (

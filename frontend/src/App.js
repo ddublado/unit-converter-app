@@ -5,7 +5,7 @@ import Dashboard from './components/Dashboard';
 
 // Log the environment variable to debug
 console.log('REACT_APP_API_URL from env:', process.env.REACT_APP_API_URL);
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:9000';
+const API_URL = process.env.REACT_APP_API_URL || '';
 console.log('Using API_URL:', API_URL);
 
 function App() {
