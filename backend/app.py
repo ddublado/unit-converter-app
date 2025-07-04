@@ -125,6 +125,10 @@ def convert():
     except ValueError:
         return jsonify({"error": "Invalid numerical value"}), 400
 
+@app.route('/static/<path:filename>')
+def serve_static(filename):
+    return send_from_directory(os.path.join('build', 'static'), filename)
+
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
 def serve_react(path):
