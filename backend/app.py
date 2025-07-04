@@ -33,9 +33,6 @@ google = oauth.register(
 )
 
 # Routes
-@app.route('/')
-def index():
-    return jsonify({"message": "Unit Converter API"})
 
 @app.route('/login')
 def login():
